@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Trump Soft Pro';
+    src: local('Trump Soft Pro Regular'), local('Trump-Soft-Pro-Regular'),
+        url('TrumpSoftPro.woff2') format('woff2'),
+        url('TrumpSoftPro.woff') format('woff'),
+        url('TrumpSoftPro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,0 +1,955 @@
+@font-face {
+  font-family: 'TNW Avalon';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff') format('woff'),
+       url('https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Rajdhani",sans-serif;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  display: block;
+  margin: auto;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 48px rgba(0,0,0,.15);
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.page-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+#homepage-logo {
+  display: block;
+  height: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  width: 4.125rem;  
+}
+
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus ul {
+  display: flex;
+  max-width: 35rem;
+}
+
+#menus ul li {
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .9rem;
+  --text-opacity: 1;
+  color: rgba(80,86,102,var(--text-opacity));
+  line-height: 45px;
+  padding-top: .1875rem;
+  margin: 0 12px;
+}
+
+.arrow-menu::after {
+  position: relative;
+  pointer-events: none;
+  float: right;
+  margin-left: .5rem;
+  height: .75rem;
+  width: .75rem;
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMiAxMic+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjQTdBQUIyJyBkPSdNMTEuNSAzLjVMNiA5IC41IDMuNScvPjwvc3ZnPg==);
+  content: "";
+  top: 18px;
+  margin-top: -.1875rem;
+}
+
+#mailbox {
+  display: block;
+  position: relative;
+  height: 20px;
+  margin-right: 17px;
+  margin-left: 50px;
+  top: 14px;
+  width: 20px;
+  color: rgba(80,86,102,var(--text-opacity));
+  --text-opacity: 0.25;
+  fill: currentColor;
+  cursor: pointer;
+}
+
+.showcase {
+  display: block;
+  margin: 52px 10px;
+
+}
+
+.showcase header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#website-logo{
+  display: block;
+  max-width: 19%;
+  height: auto;
+  margin: 0 0 0 5%;
+  padding: 1em 0;
+  width: 80%;
+  margin-top: 35px;
+}
+
+#instruction {
+  display: block;
+  width: 25%;
+  margin-top: 3%;
+}
+
+#instruction h1 {
+  color: rgba(80,86,102,1);
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main-content {
+  margin: 10px auto;
+  max-width: 100rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(8, minmax(auto, 1fr));
+  grid-template-rows: repeat(5, 122px);
+}
+
+.main-articles {
+  box-sizing: border-box;
+  outline: none;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#article-1 {
+  grid-column: 1 / 5;
+  grid-row: 1 / span 3;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FAI-head-recognition-hed-shutterstock_1783490738.jpg&signature=7ee570bfda3ad3fd4b790d233bde618b);
+}
+
+#article-2 {
+  grid-column: 5 / 7;
+  grid-row: 1 / span 2;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FCyber-security-hed-shutterstock_1253457802-copy.jpg&signature=ac864187b6e2bfc26b55e46166bb0b90);
+  background-size: cover;
+}
+
+#article-3 {
+  grid-column: 7 / 9;
+  grid-row: 1 / span 2;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2Fbattlesector.jpg&signature=dbd41fb7d57de368f66fe7358936f4e6);
+  background-size: cover;
+}
+
+#article-4 {
+  grid-column: 1 / 5;
+  grid-row: 4 / span 2;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnext_home-promo_tnw2021-1146x372.jpg&signature=1524156861730ee8f13906f3306d615a);
+  background-size: cover;
+}
+
+#article-5 {
+  grid-column: 5 / 9;
+  grid-row: 3 / span 3;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FNASA-Mars-InSight-lander.jpg&signature=cb85bc4f84a038d2fbc5bdf975f28b8a);
+  background-size: cover;
+}
+
+.article-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  display: block;
+  background: linear-gradient(transparent, black 80%);
+}
+
+.article-header h6 {
+  margin-bottom: .25rem;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+}
+
+.article-header h4 {
+  color: white;
+  text-align: left;
+  font-size: 0.9em;
+  /* line-height: 1.15; */
+  font-weight: 600;
+  letter-spacing: -.2px;  
+  cursor: pointer;
+}
+
+.bigger-header {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.article-header h2 {
+  color: white;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -.2px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.addition {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#learn-more {
+  color: white;
+  font-size: 13px;
+  letter-spacing: .025em;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 500;
+  display: block;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1em;
+  box-shadow: inset 0 0 0 1px #fff;
+  cursor: pointer;
+}
+
+.popular {
+  padding: 4em 0;
+  display: block;
+  margin: 1em auto;
+}
+
+#popular-header {
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;  
+}
+
+#popular-header h3 {
+  color: #a7aab2;
+  text-align: center;
+  flex: 1 1 0%;
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: .01em;  
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-family: "Trump Soft Pro", sans-serif;
+  transform: scale(1, 0.8);
+}
+
+.trending {
+  padding: 0 3em;
+}
+
+.trending ol {
+  display: grid;
+  margin: 1.5rem;
+  gap: 1.5rem;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.trending ol li {
+  display: flex;
+  flex-direction: row;
+}
+
+.trending ol li span {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 38px;
+  color: rgba(204,0,153,1);
+  font-family: "Trump Soft Pro",sans-serif;
+}
+
+.trending ol li h4 {
+  padding: 0 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  font-size: 15px;
+}
+
+.trending ol li h4:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 149, 250, 0.9);
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.latest-stories {
+  display: block;
+  padding: 7em 2em;
+  max-width: 80rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.black-section-title {
+  margin-bottom: 4rem;
+}
+
+.black-section-title h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: "TNW Avalon",sans-serif;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1;
+  text-transform: none;
+}
+
+.stories-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+
+.stories-illustration img {
+  background-size: cover;
+}
+
+.extraction {
+  margin-top: 1rem;
+}
+
+.extraction h4 {
+  font-family: "Graphik",sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.extraction h4:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 149, 250, 0.9);
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.extraction p {
+  padding-top: .25rem;
+  font-size: .875rem;
+  color: rgba(167,170,178,1);
+}
+
+.all-news {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.all-news a {
+  border-radius: 1.5rem;
+  padding: 0 1.5rem;
+  padding-right: 38px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(80,86,102,1);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px rgba(80,86,102,.25);
+  letter-spacing: .025em;
+  line-height: 48px;
+}
+
+.all-news a::after {
+  position: absolute;
+  height: 1rem;
+  top: 1rem;
+  opacity: .5;
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMCAxNic+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjNTA1NjY2JyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIGQ9J00xLjUgMWw3IDctNyA3Jy8+PC9zdmc+);
+  background-size: 100%;
+  content: "";
+  right: 20px;
+  width: 10px;
+}
+
+.news-channels {
+  padding: 7rem 2rem;
+  max-width: 100rem;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  grid-auto-rows: 1fr;
+  padding: 1rem 1rem;
+  grid-gap: 16px;
+}
+
+.recommended-channels {
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.recommended-channels img{
+  display: block;
+  margin-bottom: 5rem;
+  height: 2.5rem;
+  min-width: 120px;
+  max-width: 120px;  
+}
+
+.recommended-channels h4 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Graphik",sans-serif;
+}
+
+#channel-1 {
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&signature=4423a77a45ff6281a089424a8dd0bc24);
+}
+
+#channel-2 {
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=7b20700b0f58af3860449664ae1a5e68);
+}
+
+#channel-3 {
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&signature=1d3ef28f5220f870b7e289810caa80a3);
+}
+
+#channel-4 {
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=72ccfd9e92f942be8ace3526d0dc3aab);
+}
+
+#channel-5 {
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b);
+}
+
+.subscription {
+  background: #000;  
+  background-image: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  padding: 4em;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;  
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.news-form {
+  width: 100%;
+}
+
+.news-form h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "TNW Avalon",sans-serif;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1;
+  text-transform: none;
+}
+
+.news-form p {
+  width: 100%;
+}
+
+.news-form p a {
+  color: rgba(0,204,204,1);
+  text-decoration: none;
+}
+
+.news-form p a:hover {
+  color: white;
+}
+
+.email-field {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 4px 24px rgba(0,0,0,.25);  
+  /* width: 75%; */
+}
+
+.email-field svg {
+  color: rgba(167,170,178,1);
+  opacity: .5;
+  margin: 0 .75rem;
+  /* order: 1; */
+  height: 20px;
+  width: 20px;  
+  display: block;
+  max-width: 100%;
+  fill: currentColor;
+}
+
+.email-field input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  padding: .75rem 0;
+  position: relative;
+  display: block;
+  border: none;
+  font-size: 1rem;
+  font-family: "Graphik",sans-serif;
+  color: rgba(80,86,102,1);
+  outline: none;
+
+}
+
+.email-field input::placeholder {
+  color: rgba(167,170,178,1);
+}
+
+.email-field input:focus {
+  outline: none;
+}
+
+.email-field button {
+  border-style: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: .875rem;
+  height: 3rem;
+  padding: 0 .75rem;
+  color: rgba(167,170,178,1);
+  line-height: 1.5;
+}
+
+.socials {
+  display: block;
+}
+
+.socials ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.fab {
+  color: rgba(197, 197, 197, 0.635);
+}
+
+.social-email {
+  color: rgba(197, 197, 197, 0.635);
+  fill: currentColor;
+  width: 2rem;
+  height: 2rem;
+}
+
+.videos {
+  padding: 7rem 2rem;
+  max-width: 80rem;
+}
+
+.black-section-title {
+  margin-bottom: 4rem;
+}
+
+.video-container {
+  display: flex;
+}
+
+.main-stage {
+  background-color: black;
+  flex-grow: 1;
+}
+
+#staged-video {
+  min-height: 450px;
+  min-width: 600px;
+  position: relative;
+}
+
+#staged-video iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+}
+
+/* .ytp-cued-thumbnail-overlay-image {
+  background-size: contain;
+} */
+
+#video-title {
+  padding: 2.75rem 1.5rem;
+}
+
+#video-title h3 {
+  color:white;
+  font-family: "Graphik",sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+#video-title p {
+  color: rgba(167,170,178,1);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.waiting-list span:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 149, 250, 0.9);
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.playlist {
+  position: relative;
+  width: calc(224px + 1.5rem);
+  margin-left: 25px;
+}
+
+.scroller {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.waiting-list {
+  display: flex;
+  padding-bottom: 1.5rem;
+  min-width: 224px;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.img-container {
+  position: relative;
+  /* height: 120px; */
+  width: auto;  
+}
+
+.img-container img {
+  object-fit: cover;
+  height: 140px;
+  width: 100%;  
+}
+
+.waiting-list span {
+  padding-top: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: currentColor;
+  font-family: "Graphik",sans-serif;
+}
+
+.scroller-fader {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  height: 2rem;
+  background: linear-gradient(transparent,#f7f8f8);
+}
+
+.work-with-us {
+  padding: 6em 2em 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.co-work {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.goals {
+  margin: .75rem;
+  text-align: left;
+}
+
+.goals h6 {
+  margin-bottom: .5rem;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Shentox",sans-serif;
+}
+
+.goals h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: "TNW Avalon",sans-serif;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1;
+  text-transform: none;  
+}
+
+.goals p {
+  font-family: "Graphik", sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+  color: rgba(80,86,102,1);
+  line-height: 2rem;
+}
+
+.goals a {
+  color: white;
+  box-shadow: none;
+  background-color: #0cc;
+  padding: 0 1.5rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  height: 3rem;  
+  vertical-align: middle;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-style: none;
+  border-radius: .25rem;
+  font-size: 13px;
+  letter-spacing: .025em;
+  line-height: 48px;
+}
+
+.ideas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 1.1rem;
+}
+
+.groups {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.group-icon {
+  width: 7rem;
+}
+
+.group-info {
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Graphik",sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.links {
+  margin: 1rem 4rem 2rem;
+  max-width: 80rem;
+  position: relative;
+}
+
+.links ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links ul li {
+  opacity: .5;
+}
+
+.only-footer {
+  margin-top: 1rem;
+  padding: 4rem 0;
+  background-color: black;
+  color: white;
+}
+
+.others {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 17rem;
+}
+
+.upper-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.upper-content a {
+  display: block;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.upper-content p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#footer-social-email {
+  width: 1.4rem;
+  height: 1.4rem;  
+}
+
+.right-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+
+.right-footer-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-footer-columns h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Trump Soft Pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+.right-footer-columns ul li a{
+  text-decoration: none;
+  color: rgb(0, 204, 204);
+}
+
+.more-column ul {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
+
+.about-tnw ul {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-color: rgba(80,86,102,1);
+  border-top: 1px rgba(80,86,102,1);
+  border-style: solid;
+  color: rgba(167,170,178,1);
+  font-size: .875rem;
+  line-height: 1.75;
+  text-align: center;
+  font-family: "Graphik",sans-serif;
+}
+
+#financial {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
