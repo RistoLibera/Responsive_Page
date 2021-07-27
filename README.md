@@ -11,3 +11,5 @@ which will show your my understanding of responsive HTML&&CSS building skills.
 Powered by Github Page:
 
 https://ristolibera.github.io/Responsive_Page/
+
+Zooming created responsiveness.
