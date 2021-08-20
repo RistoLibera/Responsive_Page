@@ -41,12 +41,14 @@ section {
   height: 3rem;
 }
 
+#small-logo {
+  display: none;
+}
+
 #homepage-logo {
   display: block;
   height: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
   width: 4.125rem;  
 }
 
@@ -141,7 +143,7 @@ section {
   max-width: 100rem;
   padding: 0 2rem;
   display: grid;
-  grid-gap: .5rem;
+  gap: .5rem;
   grid-template-columns: repeat(8, minmax(auto, 1fr));
   grid-template-rows: repeat(5, 122px);
 }
@@ -353,7 +355,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 32px;
+  gap: 32px;
 }
 
 .stories-illustration img {
@@ -437,7 +439,7 @@ section {
   grid-template-columns: repeat(5, minmax(0,1fr));
   grid-auto-rows: 1fr;
   padding: 1rem 1rem;
-  grid-gap: 16px;
+  gap: 16px;
 }
 
 .recommended-channels {
@@ -603,7 +605,7 @@ section {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
-  grid-gap: 10px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -897,7 +899,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5rem;
+  gap: 5rem;
 }
 
 .right-footer-columns {
@@ -924,14 +926,14 @@ section {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: auto;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .about-tnw ul {
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: auto;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .copyright {
