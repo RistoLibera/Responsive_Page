@@ -428,4 +428,74 @@
     height: 1rem;
   }
 
+  .videos {
+    padding: 3rem 0;
+  }
+
+  .black-section-title {
+    margin-bottom: 2rem;
+  }
+
+  #staged-video {
+    min-height: 170px;
+    min-width: 300px;
+    position: relative;
+  }
+
+  #video-title {
+    padding: 0.75rem 0.5rem;
+    text-align: left;
+  }
+
+  #video-title h3 {
+    font-size: 0.8rem;
+  }
+
+  #video-title p {
+    font-size: 10px;
+  }
+
+  .waiting-list {
+    display: flex;
+    padding: .5rem;
+    min-width: 154px;
+    flex: 0 0 154px;
+    flex-direction: column;
+  }
+
+  .waiting-list span {
+    font-size: 0.7rem;
+  }
+
+  .work-with-us {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .links {
+    margin: 0 4rem 2rem;
+  }
+
+  .only-footer {
+    padding: 3rem 0;
+  }
+
+  .others {
+    padding: 0 1.5rem ;
+  }
+  .others .left-footer {
+    padding-right: 0rem;
+  }
+
+  .others .right-footer {
+    gap: 0;
+  }
+
+  .right-footer-columns ul li a {
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+  }
 }
