@@ -426,6 +426,17 @@
   .social-email {
     width: 1rem;
     height: 1rem;
+    padding-top: 0.2rem;
+  }
+
+  .email-field svg {
+    margin: 0 0.6rem;
+    height: 40px;
+    width: 40px;
+  }
+
+  .email-field input::placeholder {
+    font-size: 0.7rem;
   }
 
   .videos {
@@ -488,6 +499,12 @@
 
   .others .right-footer {
     gap: 0;
+  }
+
+  #footer-social-email {
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.2rem;
   }
 
   .right-footer-columns ul li a {
