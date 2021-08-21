@@ -9,7 +9,7 @@
 - Powered by Github Page:
 https://ristolibera.github.io/Responsive_Page/
 
-- Zooming created responsiveness fitting smaller screen and smartphone screen.
+- Zooming created responsiveness fitting smaller screen or smartphone screen.
 
 - Original website(no-smartphone-responsiveness):
 https://thenextweb.com/
