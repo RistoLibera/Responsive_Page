@@ -13,7 +13,7 @@ https://ristolibera.github.io/Responsive_Page/
 
 - QR code:
 
-<img src="https://raw.githubusercontent.com/RistoLibera/Responsive_Page/main/QR-code.png" width="400"/>
+<img src="https://raw.githubusercontent.com/RistoLibera/Responsive_Page/main/QR-code.png" width="200"/>
 
 - Original website(no-smartphone-responsiveness):
 https://thenextweb.com/
