@@ -15,7 +15,7 @@ https://ristolibera.github.io/Responsive_Page/
 
 <img src="https://raw.githubusercontent.com/RistoLibera/Responsive_Page/main/QR-code.png" width="200"/>
 
-- Original website(no-smartphone-responsiveness):
+- Original website(lack-smartphone-responsiveness):
 https://thenextweb.com/
 
 
