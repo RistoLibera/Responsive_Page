@@ -9,7 +9,7 @@
 - Powered by Github Page:
 https://ristolibera.github.io/Responsive_Page/
 
-- Zooming created responsiveness fitting smaller screen or smartphone screen.
+- Zooming creates responsiveness fitting smaller screen or smartphone screen.
 
 - QR code:
 
