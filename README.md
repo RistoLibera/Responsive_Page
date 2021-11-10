@@ -1,6 +1,6 @@
 # Project: Responsive Page
 
-- Odin Project: Building with Responsive Design:
+- Building with Responsive Design of Odin Project:
 https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/html-and-css/lessons/building-with-responsive-design
 
 ## Content
