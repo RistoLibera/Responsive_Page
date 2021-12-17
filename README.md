@@ -5,7 +5,7 @@
 
 ## Content
 
-- A responsive one page website showing my understanding of responsive HTML&&CSS building skills.
+- A responsive one page website showing my understanding of responsive HTML&CSS building skills.
 
 ## Link
 
