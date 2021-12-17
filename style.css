@@ -862,6 +862,7 @@ section {
 }
 
 .others {
+  justify-content: space-around;
   padding: 0 2rem;
   display: flex;
   flex-direction: row;
